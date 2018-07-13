@@ -1,16 +1,26 @@
-$(document).ready(function() {
-      $("#play").submit(function(event) {
+/business logic
+var theFormNumbers = [];
 
-          var userInput = perseInt($("#number").val(););
-          if ((userInput % 5) && (userInput % 3) === 0) {
-            document.write("pingpong");
-          } else if ((userInput % 3) === 0) {
-            document.write("ping");
-          } else if ((userInput % 5) === 0) {
-            document.write("pong");
-          } else {
-            document.write(userInput);
-          };
-          event.preventDefult();
-        };
-      });
+function praxy(finisher) {
+  for (var index = 1; index <= finisher; index++)
+    if (index % 15 === 0) {
+      theFormNumbers.push("ping pong");
+    } else if (index % 5 === 0) {
+    theFormNumbers.push("pong");
+  } else if (index % 3 === 0) {
+    theFormNumbers.push("ping");
+  } else {
+    theFormNumbers.push(index);
+  }
+}
+
+//user interface
+$(document).ready(function() {
+  $("#button").click(function() {
+    var finisher = parseInt($("#numberInput").val());
+    praxy(finisher);
+    theFormNumbers.forEach(function(finisher) {
+      $("#results").append("<li>" + finisher + "</li>");
+    });
+  });
+});
