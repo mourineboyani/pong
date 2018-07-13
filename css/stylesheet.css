@@ -1,0 +1,42 @@
+body{
+font-size: 20px;
+text-align: left;
+font-style: oblique;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Galada', cursive;;
+color:gold;
+background-image:url("http://technonewstrend.co/wp-content/uploads/2018/06/hd-wallpaper-for-android-dark-best-of-50-black-wallpaper-in-fhd-for-free-download-for-android-desktop-and-of-hd-wallpaper-for-android-dark.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+.container{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+ padding: 30px;
+ color:#000000;
+
+}
+#section1{
+align-items: Left;
+color: gold;
+text-align: left;
+padding: 10px;
+position: relative;
+color: gold;
+}
+
+
+#section2,
+#section3{
+  align-items: center;
+  color: gold;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  color: gold;
+}
+footer{
+  text-align:center;
+
+
+}
