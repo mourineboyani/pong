@@ -3,15 +3,27 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-  <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <title>PING PONG</title>
 </head>
 
 <body>
+  <svg viewBox="0 0 960 300">
+	<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="80%">play</text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
   <div class="container">
     <div class="col-md-4" id="section1">
       <p>pingpong count</p>
@@ -34,14 +46,17 @@
       <button href="#play">PLAY</button>
     </div>
 
-    <div class=section id="section3" <form id="player">
+    <div class=section id="section3">
+      <form id="game">
 
-      <label for="input-number">Your number:</label>
-      <input id="input-number" type="number">
+        <label for="input-number">Your number:</label>
+        <input id="input-number" type="numeral">
+        <button type="submit" class="btn">PingPong</button>
+
       </form>
-      <div id="end-number">
-        <ul id="results"></ul>
-      </div>
+
+      <p><span id="results"></span></p>
+
     </div>
   </div>
   <footer>
@@ -50,6 +65,8 @@
     <h3><a href=" https://github.com/mourineboyani/pong"><i class="fa fa-github" aria-hidden="true" style="font-size:40px; color:#FFA500;"></i></a></h3>
 
   </footer>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
