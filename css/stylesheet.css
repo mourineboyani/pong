@@ -93,7 +93,7 @@ svg {
 	animation-delay: -5s;
 }
 @keyframes stroke-offset{
-	100% {stroke-dashoffset: -35%;}
+	100% {stroke-dashoffset: -15%;}
 }
 
 #results{
