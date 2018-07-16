@@ -1,35 +1,24 @@
 // BUSINESS LOGIC
-var output = function(number) {
-  var array = [];
+function output(number) {
   for (var index = 1; index <= number; index++) {
-    if ((index % 15) === 0) {
-      array.push("Ping Pong");
+    if (((index % 5) === 0) && ((index % 3) === 0)) {
+      $("#results").append("<li>pingpong</li>");
     } else if ((index % 5) === 0) {
-      array.push("Pong");
+      $("#results").append("<li>pong</li>");
     } else if ((index % 3) === 0) {
-      array.push("Ping");
-    } else
-      array.push(index);
+      $("#results").append("<li>ping</li>");
+    } else {
+      $("#results").append("<li>" + index + "</li>");
+    }
   }
-  console.log(index);
-  return array;
-};
-
+  i = i += 1;
+}
 // USER INTERFACE
 $(document).ready(function() {
-  $("form#game").submit(function(event) {
-    $("#results").empty();
-
-
-    var number = parseInt($("input#numeral").val());
-    var array = output(number);
-    array.forEach(function(aftermath) {
-      $("#results").append("<li>" + aftermath + "</li>");
-      event.preventDefault();
-    });
-
-  });
-});
-$('[data-text]').on('keyup', function() {
-  $(this).attr('data-text', $(this).text());
-});
+  $("#btnGamer").click(function(event) {
+    event.preventDefault();
+    var number = parseInt($("#input-number").val());
+    output(number);
+    $("#input-number").val("");
+  })
+})

@@ -2,11 +2,10 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> -->
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
   <title>PING PONG</title>
 </head>
 
@@ -16,7 +15,7 @@
 		<text text-anchor="middle" x="50%" y="80%">play</text>
 	</symbol>
 
-
+	<g class = "g-ants">
 		<use xlink:href="#s-text" class="text-copy"></use>
 		<use xlink:href="#s-text" class="text-copy"></use>
 		<use xlink:href="#s-text" class="text-copy"></use>
@@ -51,11 +50,11 @@
 
         <label for="input-number">Your number:</label>
         <input id="input-number" type="numeral">
-        <button type="submit" class="btn">PingPong</button>
+        <button id="btnGamer" class="btn">PingPong</button>
 
       </form>
 
-      <p><span id="results"></span></p>
+      <ul id="results"></ul>
 
     </div>
   </div>
@@ -65,7 +64,7 @@
     <h3><a href=" https://github.com/mourineboyani/pong"><i class="fa fa-github" aria-hidden="true" style="font-size:40px; color:#FFA500;"></i></a></h3>
 
   </footer>
-  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 

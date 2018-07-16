@@ -95,3 +95,8 @@ svg {
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;}
 }
+
+#results{
+  max-height: 400px;
+  overflow: scroll;
+}
