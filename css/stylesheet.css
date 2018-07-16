@@ -47,7 +47,7 @@ html, body{
 }
 
 body{
-  background: #030321;
+  background: #660066;
   font-family: Arial;
 }
 
@@ -93,7 +93,7 @@ svg {
 	animation-delay: -5s;
 }
 @keyframes stroke-offset{
-	100% {stroke-dashoffset: -15%;}
+	100% {stroke-dashoffset: -30%;}
 }
 
 #results{
